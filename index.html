@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Heroes of History</title>
+  <meta name="description" content="An autonomous evolutionary trading card game">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="Heroes of History">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="An autonomous evolutionary trading card game">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Bellefair');
+
+    body {
+    padding: 0.5em 2em;
+    font-family: "Bellefair", serif;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #161B22;
+    }
+
+    a{
+        color: #fff
+    }
+
+    p { max-width: 47%; }
+
+    table {
+    position: relative;
+    margin: 2em 0;
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+    text-align: left;
+    border-collapse: collapse;
+    background-color: rgba(45,45,55, 0.8); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+
+    th, td { 
+    padding: 1em 1.5em; 
+    font-weight: normal;
+    border: 1px solid #974;
+    }
+
+    thead { text-transform: uppercase; }
+    th { white-space: nowrap; }
+    td { width: 100%; }
+
+    tbody tr:first-child * { 
+    border-top: 0; /* fixes that border */
+    }
+
+    thead tr,
+    tr:nth-child(even) {
+    background-color: rgba(24,24,34,0.8);
+    }
+
+    /* them gribblies */
+    thead:before,
+    thead:after,
+    tbody:before,
+    tbody:after {
+    content: "";
+    position: absolute;
+    top: -3px; left: -3px;
+    display: block;
+    width: 32px; 
+    height: 32px;
+    background: url(gribblies.png) 0 0 no-repeat;
+    background-size: 100%;
+    }
+
+    thead:after {
+    right: -4px;
+    left: auto;
+    transform: rotate(90deg);
+    }
+
+    tbody:before {
+    top: auto;
+    bottom: -3px;
+    transform: rotate(-90deg);
+    }
+
+    tbody:after {
+    top: auto;
+    left: auto;
+    bottom: -3px;
+    right: -4px;
+    transform: rotate(-180deg);
+    }
+</style>
+
+</head>
+
+<body>
+
+    <h1>
+        Heroes of History
+    </h1>
+
+    <nav>
+        <ul>
+            <li><a href="#example-cards">Example card</a></li>
+        </ul>
+    </nav>
+
+    <h2 id="example-card">
+        Example card
+    </h2>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Armor Skill List</th>   
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Artillery Master</th>
+      <td>Large increase to damage from Ballista, Cannon, Crag S.</td>
+    </tr>
+    <tr>
+      <th>Attack Up (L)</th>
+      <td>Attack +20</td>
+    </tr>
+    <tr>
+      <th>Combo Plus</th>
+      <td>Always receive maximum number of items when combining.</td>
+    </tr>
+    <tr>
+      <th>Crit Draw</th>
+      <td>Grants 100% affinity when permofrming an unsheath attack.</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+
