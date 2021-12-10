@@ -120,7 +120,8 @@ tbody:after {
 .discord-invite-body {
   display: flex;
   justify-content: center;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .discord-invite-details {
